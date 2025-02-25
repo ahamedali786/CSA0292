@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main()
+{
+    int rice, sugar, oil;
+    int price_of_rice, price_of_sugar, price_of_oil;
+    int total_amount;
+    float GST;
+    float final_amount;
+
+    int price_per_kg_rice = 100;
+    int price_per_kg_sugar = 50;
+    int price_per_liter_oil = 200;
+    printf("Enter quantity of rice, sugar, and oil (in kg or liters): ");
+    scanf("%d %d %d", &rice, &sugar, &oil);
+    price_of_rice = rice * price_per_kg_rice;
+    price_of_sugar = sugar * price_per_kg_sugar;
+    price_of_oil = oil * price_per_liter_oil;
+    printf("The price of rice = %d\n", price_of_rice);
+    printf("The price of sugar = %d\n", price_of_sugar);
+    printf("The price of oil = %d\n", price_of_oil);
+    total_amount = price_of_rice+price_of_sugar+price_of_oil;
+    printf("the total amount is=%d",total_amount);
+    GST = 0.05*total_amount;
+    printf("\nthe gst=%f",GST);
+    final_amount = total_amount+GST;
+    printf("\nthe final amount is =%f",final_amount);
+    
+
+    return 0;
+}
+
+OUTPUT :
+
+Enter quantity of rice, sugar, and oil (in kg or liters): 1 2 3
+The price of rice = 100
+The price of sugar = 100
+The price of oil = 600
+the total amount is=800
+the gst=40.000000
+the final amount is =840.000000
