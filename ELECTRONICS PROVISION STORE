@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(){
+    int lap,headset,charger;
+    int price_of_lap,price_of_headset,price_of_charger;
+    int total_amount;
+    float GST;
+    float final_amount;
+    int price_of_1lap=90000;
+    int price_of_1headset=10000;
+    int price_of_1charger=5000;
+    printf("Enter No.of lap,Headset and charger=");
+    scanf("%d%d%d",&lap,&headset,&charger);
+    price_of_lap=lap*price_of_1lap;
+price_of_headset=headset*price_of_1headset;
+price_of_charger=charger*price_of_1charger;
+printf("the price of lap=%d\n",price_of_lap);
+printf("the price of headset=%d\n",price_of_headset);
+printf("the price of charger=%d\n",price_of_charger);
+total_amount=price_of_lap+price_of_headset+price_of_charger;
+GST=0.1*total_amount;
+final_amount=GST+total_amount;
+printf("total amount with out GST=%d\ntotal amount with GST=%f\nfinal_amount=%f ",total_amount,GST,final_amount);
+}
+
+
+OUTPUT:
+Enter No.of lap,Headset and charger=1 2 3 
+the price of lap=90000
+the price of headset=20000
+the price of charger=15000
+total amount with out GST=125000
+total amount with GST=12500.000000
+final_amount=137500.000000 
