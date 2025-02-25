@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int Deposit,Withdraw;
+    int Current_balance1,Final_balance;
+    
+    int Initial_balance = 5000;
+    printf("Your initial balance is=%d",Initial_balance);
+    printf("\nhow much you want to Deposit:");
+    scanf("%d",&Deposit);
+    Current_balance1 = Initial_balance + Deposit;
+    printf("your Current balance is=%d",Current_balance1);
+    printf("\nhow much you want to withdraw:");
+    scanf("%d",&Withdraw);
+    Final_balance = Current_balance1 - Withdraw;
+    printf("your final balance is=%d",Final_balance);
+    
+}
+
+OUTPUT:
+
+Your initial balance is=5000
+how much you want to Deposit:1000
+your Current balance is=6000
