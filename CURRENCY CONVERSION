@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int USD,INR;
+    int One_USD = 83;
+    
+    
+    printf("No of Dollars has to change: ");
+    scanf("%d",&USD);
+    
+    INR = 83*USD;
+    printf("the Amount im INR is=%d",INR);
+    
+}
+
+OUTPUT:
+
+No of Dollars has to change: 10
+the Amount im INR is=830
