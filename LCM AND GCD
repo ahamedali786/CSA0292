@@ -1,7 +1,9 @@
 #include<stdio.h>
 int main()
 {
-int a=24,b=18,lcm,gcd,i;
+int a,b,lcm,gcd,i;
+printf("Enter the values of a and b");
+scanf("%d%d",&a,&b);
 for(i=1;i<=a&&i<=b;i++)
 {
 if(a%i==0&&b%i==0)
@@ -15,6 +17,8 @@ printf("lcm=%d",lcm);
 return 0;
 }
 
+
 OUTPUT:
-gcd=6
-lcm=72
+Enter the values of a and b2 3
+gcd=1
+lcm=6
