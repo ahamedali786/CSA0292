@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+printf("Enter the vlaues of a,b and c");
+scanf("%d%d%d",&a,&b,&c);
+if(a>b&&a>c)
+printf("the greatest among three numbers is a=%d",a);
+else if(b>c)
+printf("the greatest among three numbers is b=%d",b);
+else
+printf("the greatest among three numbers is c=%d",c);
+return 0;
+}
+
+OUTPUT:
+Enter the vlaues of a,b and c1 2 3
+the greatest among three numbers is c=3
